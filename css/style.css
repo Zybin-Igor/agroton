@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Nunito-Sans';
+    src: url('../fonts/NunitoSans-Variable.woff2') format('woff2-variations');
+    src: url('../fonts/NunitoSans-Variable.woff2') format('woff2') tech('variations');
+    font-weight: 300 700;
+
+}
+
+@font-face {
+    font-family: 'WorkSans-Light';
+    src: url('../fonts/WorkSans-Light.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WorkSans-Medium';
+    src: url('../fonts/WorkSans-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('../fonts/WorkSans-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WorkSans-SemiBold';
+    src: url('../fonts/WorkSans-SemiBold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Nunito-Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0e0d0d;
+    background-color: #fdfdf0;
+    line-height: 1.35;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container-big {
+    max-width: 1840px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header-inner {
+    font-family: 'Nunito-Sans';
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+
+.menu-list {
+    display: flex;
+    gap: 0 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.header-contact {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: right;
+    text-transform: uppercase;
+    background-color: #0E0D0D;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 40px;
+    width: 181px;
+    height: 42px;
+
+}
+
+.about {
+    margin-bottom: 180px;
+}
+
+.about-top {
+    text-align: center;
+    color: #fdfdf0;
+    background-image: url(../images/hero-image-1x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-transform: uppercase;
+    min-height: 748px;
+}
+
+.about-title {
+    font-family: 'WorkSans-SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 250px;
+    line-height: 0.9;
+    padding-top: 85px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fdfdf0;
+}
+
+.about-text {
+    font-family: 'WorkSans-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fdfdf0;
+}
+
+.about-achievements {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -56px;
+    margin-bottom: 90px;
+
+
+}
+
+.about-achievement {
+    min-width: 214px;
+    display: flex;
+    border-radius: 20px;
+    background-color: #f4f4e7;
+    max-width: 580px;
+    padding: 14px 10px;
+    gap: 0 25px
+}
+
+.about-achievement-imgbox {
+    min-width: 214px;
+    position: relative;
+}
+.about-achievement-arrow {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+.about-achievement-title {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+    padding-top: 10px;
+line-height: 1.35;
+}
+
+.about-achievement-text {
+    font-family: 'Nunito-Sans';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.35;
+}
+.text-bold {
+   font-family: 'WorkSans-SemiBold'; 
+   font-weight: 600;
+}
+.text-color {
+    font-weight: 600;
+    color: #F2A531;
+    
+
+}
