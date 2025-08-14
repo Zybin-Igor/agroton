@@ -52,7 +52,22 @@ body {
 	cursor: pointer;
 }
 
-
+.menu-link {
+	color: #333333;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+	transition: all 0.3s ease;
+	/* Анимация для всех свойств */
+	display: inline-block;
+	/* Для работы transform */
+}
+.menu-link:hover {
+	color: #ff6b00;
+	/* Изменение цвета */
+	transform: scale(1.1);
+	/* Увеличение текста */
+}
 .container {
 	max-width: 1440px;
 	padding: 0 10px;
@@ -85,6 +100,15 @@ body {
 	cursor: pointer;
 }
 
+.logo img {
+	transition: transform 0.3s ease;
+	/* Анимация для лого */
+}
+
+.logo:hover img {
+	transform: scale(1.05);
+	/* Увеличение лого при наведении */
+}
 .header-contact {
 	font-weight: 500;
 	font-size: 16px;
@@ -96,9 +120,13 @@ body {
 	padding: 10px 40px;
 	width: 181px;
 	height: 42px;
+	transition: all 0.3s ease;
 
 }
-
+.header-contact:hover {
+	background-color: #e05d00;
+	transform: scale(1.05);
+}
 .about {
 	margin-bottom: 180px;
 }
@@ -793,6 +821,7 @@ body {
 			width: 100%;
 			height: 3px;
 			background-color:#000;
+			transition: all 0.3s ease;
 		}
 				.menu-list {
 					position: absolute;
