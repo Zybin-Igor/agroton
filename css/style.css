@@ -806,6 +806,7 @@ body {
 					top: 0;
 					transform: translateY(-100%);
 					background-color:burlywood;
+					transition: transform .5s ease;
 				}
 					.menu-list.menu-active{
 						transform: translateY(0);
