@@ -127,6 +127,13 @@ body {
 	background-color: #e05d00;
 	transform: scale(1.05);
 }
+
+.button:hover {
+	background-color: #e05d00;
+	transform: scale(1.05);
+	transition: all 0.3s ease;
+}
+
 .about {
 	margin-bottom: 180px;
 }
@@ -396,6 +403,7 @@ body {
 	padding: 19px 97px 19px 38px;
 	border-radius: 96px;
 	background-color: #000;
+	transition: all 0.3s ease;
 
 }
 
@@ -403,6 +411,7 @@ body {
 	position: absolute;
 	right: 4px;
 	top: 3px;
+	transition: all 0.3s ease;
 }
 
 .products-link {
@@ -718,6 +727,7 @@ body {
 .footer-element:nth-child(4) {
 	animation-delay: 0.4s;
 }
+
 
 
 
@@ -1137,4 +1147,141 @@ body {
 	}
 		
 	
+}
+
+/*----------------Модальное окно----------------*/
+
+/* Стили модального окна */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 2000;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+	display: flex;
+	opacity: 1;
+}
+
+.modal-container {
+	background-color: white;
+	border-radius: 10px;
+	width: 90%;
+	max-width: 800px;
+	padding: 30px;
+	position: relative;
+	animation: modalFadeIn 0.4s ease;
+}
+
+@keyframes modalFadeIn {
+	from {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.modal-close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 24px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #666;
+	transition: color 0.3s;
+}
+
+.modal-close:hover {
+	color: #ff6b00;
+}
+
+.modal-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.contact-info,
+.contact-form {
+	flex: 1;
+	min-width: 300px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+	color: #333;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+.contact-info p {
+	margin-bottom: 15px;
+	color: #555;
+}
+
+.social-links {
+	margin-top: 20px;
+}
+
+.social-icon {
+	display: inline-block;
+	margin-right: 10px;
+	color: #ff6b00;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.social-icon:hover {
+	color: #e05d00;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	border-color: #ff6b00;
+	outline: none;
+}
+
+.submit-btn {
+	background-color: #ff6b00;
+	color: white;
+	border: none;
+	padding: 12px 25px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+	background-color: #e05d00;
+	transform: translateY(-2px);
 }
